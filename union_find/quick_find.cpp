@@ -28,7 +28,7 @@ void quick_find::printUF() const
 	{
 		int pid = value.at(j);
 		for (int i = 0; i < id_.size(); ++i)
-			if (pid == id_.at(i)) std::cout << i << "-";
+			if (pid == id_.at(i)) std::cout << i << " ";
 		std::cout << std::endl;
 	}
 }
