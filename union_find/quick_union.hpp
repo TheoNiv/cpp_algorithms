@@ -10,9 +10,10 @@ public:
 	quick_union(std::vector<int> id) : id_(id) {};
 	~quick_union();
 
-	bool connectedUF(const int p, const int q) const;
+	bool connectedUF(const int p, const int q);
 	void unionUF(const int p, const int q);
 	void printUF() const;
-	int getRoot(const int p) const;
+	int getRoot(const int p);
+	int getHeight(const int p) const;
 };
 
